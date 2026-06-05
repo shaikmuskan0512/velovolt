@@ -3,6 +3,7 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 require("dotenv").config();
 const bookingRoutes = require("./routes/bookingRoutes");
+app.use("/api/bookings", bookingRoutes);
 
 const app = express();
 

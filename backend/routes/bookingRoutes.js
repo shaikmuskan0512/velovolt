@@ -16,14 +16,14 @@ router.post("/", async (req, res) => {
       booking,
     });
   } catch (error) {
-  console.error("FULL BACKEND ERROR:");
-  console.error(error);
+    console.error("FULL BACKEND ERROR:");
+    console.error(error);
 
-  res.status(500).json({
-    success: false,
-    message: error.message,
-  });
-}
+    res.status(500).json({
+      success: false,
+      message: error.message,
+    });
+  }
 });
 
 module.exports = router;
