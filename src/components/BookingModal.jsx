@@ -71,7 +71,7 @@ export default function BookingModal({ bike, onClose, onBookingSuccess }) {
 
   try {
     const response = await fetch(
-      "http://localhost:5000/api/bookings",
+      "https://velovolt.onrender.com/api/bookings",
       {
         method: "POST",
         headers: {
