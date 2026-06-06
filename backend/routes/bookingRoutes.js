@@ -25,5 +25,11 @@ router.post("/", async (req, res) => {
     });
   }
 });
+router.get("/", (req, res) => {
+  res.json({
+    success: true,
+    message: "Bookings API Working",
+  });
+});
 
 module.exports = router;
